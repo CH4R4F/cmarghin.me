@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="icon" href="./media/logo.svg" />
+    <title>CMarghin</title>
+  </head>
+  <body class="dark:bg-dark dark:text-white text-dark transition-all duration-300">
+    <div class="relative max-w-6xl mx-auto">
+      <div class="absolute w-[150px] md:w-[400px] h-[150px] md:h-[400px] dark:bg-blue-400/60 bg-orange-300/20 blur-3xl rounded-t-[100px] rounded-b-[50px] -z-10 top-10 left-10"></div>
+      <div class="absolute w-[200px] md:w-[400px] h-[200px] md:h-[400px] dark:bg-blue-400/60 bg-blue-300/20 blur-3xl rounded-t-[100px] rounded-b-[50px] -z-10 top-[30%] right-12"></div>
+    </div>
+    <main class="transition-all duration-300 w-full dark:bg-black/80 min-h-screen px-4 z-10 backdrop-blur-3xl">
+      <header class="max-w-6xl mx-auto flex justify-between items-center py-4">
+        <div class="z-50">
+          <a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30.776" height="33.124" viewBox="0 0 30.776 33.124">
+              <path id="Path_1" data-name="Path 1" d="M171.208,146.237v4.841l-14.524,7.262-12.1-6.576V165.6l12.1,7.262,14.524-7.262v4.841l-14.524,7.262-16.252-10.078V144.582l16.252,8.917Z" transform="translate(-140.432 -144.582)" fill="#fff" />
+            </svg>
+          </a>
+        </div>
+        <nav id="mobileNav" class="fixed w-screen h-screen z-20 overflow-hidden left-0 top-0 flex justify-center pt-28 transition-opacity duration-200 md:hidden opacity-0 !-z-30">
+          <ul class="text-3xl text-center space-y-5">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="./about/index.html">About</a>
+            </li>
+            <li>
+              <a href="./blogs/index.html">Blogs</a>
+            </li>
+            <li>
+              <a href="./projects/index.html">Projects</a>
+            </li>
+            <li>
+              <a href="./contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="nav" class="hidden md:block">
+          <ul class="text-lg text-center flex space-x-5 dark:text-white/70 text-dark/70 font-normal">
+            <li class="dark:hover:text-white hover:text-dark transition-all duration-200">
+              <a href="#home">Home</a>
+            </li>
+            <li class="dark:hover:text-white hover:text-dark transition-all duration-200">
+              <a href="./about/index.html">About</a>
+            </li>
+            <li class="dark:hover:text-white hover:text-dark transition-all duration-200">
+              <a href="./blogs/index.html">Blogs</a>
+            </li>
+            <li class="dark:hover:text-white hover:text-dark transition-all duration-200">
+              <a href="./projects/index.html">Projects</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex gap-4 items-center">
+          <div class="modeIcons">
+            <svg class="cursor-pointer" id="light" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style="fill: #000000">
+              <g class="pointer-events-none" fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#fff"><path d="M78.83333,0v21.5h14.33333v-21.5zM30.26237,20.12826l-10.13411,10.13411l15.20117,15.20117l10.13411,-10.13411zM141.73763,20.12826l-15.20117,15.20117l10.13411,10.13411l15.20117,-15.20117zM86,35.83333c-27.6214,0 -50.16667,22.54527 -50.16667,50.16667c0,27.6214 22.54527,50.16667 50.16667,50.16667c27.6214,0 50.16667,-22.54527 50.16667,-50.16667c0,-27.6214 -22.54527,-50.16667 -50.16667,-50.16667zM86,50.16667c19.87509,0 35.83333,15.95824 35.83333,35.83333c0,19.87509 -15.95825,35.83333 -35.83333,35.83333c-19.87509,0 -35.83333,-15.95825 -35.83333,-35.83333c0,-19.87509 15.95824,-35.83333 35.83333,-35.83333zM0,78.83333v14.33333h21.5v-14.33333zM150.5,78.83333v14.33333h21.5v-14.33333zM35.32943,126.53646l-15.20117,15.20117l10.13411,10.13411l15.20117,-15.20117zM136.67057,126.53646l-10.13411,10.13411l15.20117,15.20117l10.13411,-10.13411zM78.83333,150.5v21.5h14.33333v-21.5z"></path></g>
+              </g>
+            </svg>
+            <svg class="cursor-pointer" id="dark" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style="fill: #000000">
+              <g class="pointer-events-none" fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#00062c"><path d="M168.30469,104.96162c-10.72628,34.18292 -42.65734,58.98391 -80.38121,58.98391c-46.51804,-0.0001 -84.22816,-37.71029 -84.22816,-84.22827c-0.01528,-29.19964 15.10359,-56.3212 39.94828,-71.66269c-2.55789,8.17037 -3.85517,16.68296 -3.84712,25.24436c0,46.51804 37.71029,84.22816 84.22816,84.22816c15.64347,0.02618 30.98202,-4.32648 44.28006,-12.56547z"></path></g>
+              </g>
+            </svg>
+          </div>
+
+          <div data-state="closed" id="toggle" class="space-y-[0.3rem] cursor-pointer z-50 md:hidden">
+            <span id="line1" class="transition-all duration-200 w-[20px] h-[3px] dark:bg-white bg-dark block rounded-md mx-auto"></span>
+            <span id="line-c" class="w-[30px] h-[3px] dark:bg-white bg-dark block rounded-md mx-auto"></span>
+            <span id="line2" class="transition-all duration-200 w-[20px] h-[3px] dark:bg-white bg-dark block rounded-md mx-auto"></span>
+          </div>
+          <a href="./contact/index.html" class="hidden md:block btn">Contact</a>
+        </div>
+      </header>
+
+      <section id="home" class="w-full max-w-6xl mt-10 mx-auto flex items-center flex-col md:flex-row justify-between">
+        <div class="w-full max-w-xl">
+          <p class="uppercase font-mono mb-4 load transition-all duration-1000">hi there, i'm</p>
+          <h1 class="font-headings uppercase text-3xl sm:text-4xl md:text-5xl font-bold transition-all duration-1000 load">marghin charaf</h1>
+          <p class="dark:text-white/70 text-dark/70 mb-6 transition-all duration-1000 load">Self-taught front-end developer with a passion for learning more about new technologies of web development, I like competitive problems that can be solved using code.</p>
+          <div class="flex gap-6 items-center">
+            <a href="./about/index.html" class="btn"> About me </a>
+            <div class="social space-x-4">
+              <a href="https://github.com/CH4R4F" rel="noopener noreferrer" target="_blank">
+                <i class="fab fa-github text-2xl dark:text-white/80 dark:hover:text-white text-dark/80 hover:text-dark transition-colors duration-350"></i>
+              </a>
+              <a href="https://twitter.com/CMarghin" rel="noopener noreferrer" target="_blank">
+                <i class="fab fa-twitter text-2xl dark:text-white/80 dark:hover:text-white text-dark/80 hover:text-dark transition-colors duration-350"></i>
+              </a>
+              <a href="https://hackerrank.com/cmarghin" rel="noopener noreferrer" target="_blank">
+                <i class="fab fa-hackerrank text-2xl dark:text-white/80 dark:hover:text-white text-dark/80 hover:text-dark transition-colors duration-350"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <embed src="./media/cmarghin.svg" alt="" class="w-full flex-1 transition-all duration-1000 load" />
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="367.458" height="437.572" viewBox="0 0 367.458 437.572">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="291" height="385.701" rx="20" transform="translate(105.505 448.305) rotate(7)" fill="none"/>
+    </clipPath>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 6123 4082">
+    <image width="6123" height="4082" xlink:href="cmarghinbg.png"/>
+    </pattern>
+  </defs>
+  <g id="me" transform="translate(-37.771 -448.305)">
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(126.944 509.123) rotate(17)" fill="none" stroke="#ffdd07" stroke-width="3">
+      <rect width="291" height="305" rx="20" stroke="none"/>
+      <rect x="1.5" y="1.5" width="288" height="302" rx="18.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="291" height="305" rx="20" transform="translate(95.67 528.405) rotate(7)" fill="#0065d8"/>
+    <path id="Path_5" data-name="Path 5" d="M68.909,813.958,222.07,860.744l-16.82-2-137.3-41.936Z" transform="translate(-494.114 932.17) rotate(-90)" fill="#ffdd07"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+      <rect id="cmarghinbg" width="593" height="396" transform="translate(-82 466)" fill="url(#pattern)"/>
+    </g>
+  </g>
+</svg>

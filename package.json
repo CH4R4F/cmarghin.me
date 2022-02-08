@@ -1,0 +1,17 @@
+{
+  "name": "cmarghin",
+  "version": "1.0.0",
+  "description": "this is my personal website where I'll share my blogs",
+  "main": "index.js",
+  "scripts": {
+    "convert": "tailwindcss -i ./src/styles/tailwind.css -o ./public/assets/css/styles.css --watch"
+  },
+  "author": "charaf marghin",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
