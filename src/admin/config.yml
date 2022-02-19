@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/media/blogs"
+public_folder: "/media/blogs"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blogs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Border Color", name: "darkClr", widget: "color", allowInput: true }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Used Images", name: "usedImages", widget: "image", required: false, media_folder: "public/media" }
+      - { label: "Body", name: "body", widget: "markdown" }
