@@ -13,6 +13,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Image", name: "img", widget: "image" }
+      - { label: "Image", name: "imgCaption", widget: "string" }
       - { label: "Border Color", name: "darkClr", widget: "color", allowInput: true }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Used Images", name: "usedImages", widget: "image", required: false, media_folder: "public/media" }
