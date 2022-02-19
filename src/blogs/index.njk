@@ -19,7 +19,7 @@ title: CMarghin | Blogs
   <h2 class="mb-4 text-3xl md:text-4xl dark:text-white text-dark font-bold text-center font-headings transition-all duration-1000 load">Latest Blogs</h2>
   <div class="flex flex-wrap gap-3 justify-center content-start">
     <!-- blog card -->
-    {%- for post in collections.post -%}
+    {%- for post in collections.post -%} {% if post.data.description %}
     <div class="flex flex-col overflow-hidden rounded-lg bg-white dark:bg-transparent dark:border-[{{ post.data.darkClr }}] load transition-all duration-1000 max-w-xs border-2 border-dark">
       <div>
         <img class="w-full" src="{{ post.data.img }}" alt="" />
@@ -33,6 +33,6 @@ title: CMarghin | Blogs
         </a>
       </div>
     </div>
-    {%- endfor -%}
+    {% endif %} {%- endfor -%}
   </div>
 </section>
