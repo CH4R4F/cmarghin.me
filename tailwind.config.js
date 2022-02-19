@@ -14,7 +14,6 @@ module.exports = {
       },
       // ======== add my own font family ======= //
       fontFamily: {
-        headings: ["Montserrat", "sans-serif"],
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],
       },
     },
@@ -39,5 +38,6 @@ module.exports = {
         },
       });
     }),
+    require("@tailwindcss/typography"),
   ],
 };

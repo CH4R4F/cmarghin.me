@@ -14,13 +14,18 @@ menuToggle.addEventListener("click", function () {
   let { state } = this.dataset;
   if (state == "closed") {
     this.dataset.state = "opened";
+    darkMode.classList.add("hidden");
+    lightMode.classList.add("hidden");
   } else {
     this.dataset.state = "closed";
+    if (document.documentElement.classList.contains("dark")) {
+      lightMode.classList.remove("hidden");
+    } else {
+      darkMode.classList.remove("hidden");
+    }
   }
   nav.classList.toggle("opacity-0", state != "closed");
   nav.classList.toggle("!-z-30", state != "closed");
-  lightMode.classList.toggle("hidden", !document.documentElement.classList.contains("dark"));
-  darkMode.classList.toggle("hidden", document.documentElement.classList.contains("dark"));
   everything.forEach((section) => {
     section.classList.toggle("hidden", state == "closed");
   });
@@ -35,7 +40,9 @@ menuToggle.addEventListener("click", function () {
 });
 
 window.addEventListener("resize", function () {
-  window.innerWidth > 768 && !document.documentElement.classList.contains("dark") ? darkMode.classList.remove("hidden") : lightMode.classList.remove("hidden");
+  if (window.innerWidth > 768) {
+    document.documentElement.classList.contains("dark") ? lightMode.classList.remove("hidden") : darkMode.classList.remove("hidden");
+  }
 });
 
 modeIcons.addEventListener("click", (e) => {

@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: CMarghin | Blogs
+---
+
+<section class="max-w-6xl mx-auto mt-10 pb-28">
+  <div class="text-center max-w-lg mx-auto load transition-all duration-1000">
+    <h1 class="text-4xl md:text-5xl font-semibold mb-3">CMarghin Blogs</h1>
+    <p class="mx-auto md:mx-0">This is my official blogging site where I'll share my blogs, If you like my content you can subscribe in my newsletter to receive notifications about my new blogs</p>
+    <form class="flex my-3 rounded-sm overflow-hidden border-2 border-transparent">
+      <input type="email" name="email" placeholder="example@gmail.com" required class="w-full px-4 border-2 border-primary bg-white/20 text-dark dark:text-white" />
+      <button type="submit" class="text-white bg-primary py-3 px-4">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+<section class="max-w-6xl mx-auto mt-10 pb-7">
+  <h2 class="mb-4 text-3xl md:text-4xl dark:text-white text-dark font-bold text-center font-headings transition-all duration-1000 load">Latest Blogs</h2>
+  <div class="flex flex-wrap gap-3 justify-center content-start">
+    <!-- blog card -->
+    {%- for post in collections.post -%}
+    <div class="flex flex-col overflow-hidden rounded-lg bg-white dark:bg-transparent dark:border-[{{ post.data.darkClr }}] load transition-all duration-1000 max-w-xs border-2 border-dark">
+      <div>
+        <img class="w-full" src="{{ post.data.img }}" alt="" />
+      </div>
+      <div class="p-2 dark:!text-dark flex flex-col justify-between flex-1">
+        <a href="{{ post.url }}" class="text-lg font-bold font-headings dark:text-white">{{ post.data.title }}</a>
+        <p class="dark:text-white/70 my-2">{{ post.data.description }}</p>
+        <a href="{{ post.url }}" class="justify-end items-center flex gap-3 dark:text-[{{ post.data.darkClr }}] text-dark font-light text-xl">
+          <p class="underline">Read</p>
+          <i class="far fa-arrow-alt-circle-right"></i>
+        </a>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>

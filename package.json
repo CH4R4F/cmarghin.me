@@ -4,7 +4,8 @@
   "description": "this is my personal website where I'll share my blogs",
   "main": "index.js",
   "scripts": {
-    "convert": "tailwindcss -i ./src/styles/tailwind.css -o ./public/assets/css/styles.css --watch"
+    "tailwind": "tailwindcss -i ./src/assets/css/tailwind.css -o ./public/assets/css/styles.css -w",
+    "build": "eleventy && tailwindcss -i ./src/assets/css/tailwind.css -o ./public/assets/css/styles.css --minify"
   },
   "author": "charaf marghin",
   "license": "ISC",
@@ -12,6 +13,8 @@
     "tailwindcss": "^3.0.18"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.2"
   }
 }

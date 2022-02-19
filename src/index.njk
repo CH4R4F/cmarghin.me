@@ -1,0 +1,65 @@
+---
+title: CMarghin | Home
+layout: base.njk
+---
+
+<section id="home" class="w-full max-w-6xl mt-10 mx-auto flex items-center flex-col md:flex-row justify-between mb-20">
+  <div class="w-full max-w-xl">
+    <p class="uppercase font-mono mb-4 load transition-all duration-1000">hi there, i'm</p>
+    <h1 class="font-headings uppercase text-3xl sm:text-4xl md:text-5xl font-bold transition-all duration-1000 load">marghin charaf</h1>
+    <p class="dark:text-white/70 text-dark/70 mb-6 transition-all duration-1000 load">Self-taught front-end developer with a passion for learning more about new technologies of web development, I like competitive problems that can be solved using code.</p>
+    <div class="flex gap-6 items-center">
+      <a href="./about/index.html" class="btn"> About me </a>
+      <div class="social space-x-4">
+        <a href="https://github.com/CH4R4F" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-github text-2xl dark:text-white/80 dark:hover:text-white text-dark/80 hover:text-dark transition-colors duration-350"></i>
+        </a>
+        <a href="https://twitter.com/CMarghin" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-twitter text-2xl dark:text-white/80 dark:hover:text-white text-dark/80 hover:text-dark transition-colors duration-350"></i>
+        </a>
+        <a href="https://hackerrank.com/cmarghin" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-hackerrank text-2xl dark:text-white/80 dark:hover:text-white text-dark/80 hover:text-dark transition-colors duration-350"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <embed src="./media/cmarghin.svg" alt="" class="w-full flex-1 transition-all duration-1000 load" />
+  </div>
+</section>
+<!-- blogs section  -->
+<section class="w-full max-w-6xl mx-auto pb-4">
+  <h2 class="text-3xl md:text-4xl dark:text-white text-dark font-bold text-center font-headings transition-all duration-1000 load">Featured Blogs</h2>
+  <div class="mt-12 mb-6 flex flex-wrap justify-center gap-5">
+    {% for post in collections.featured %}
+    <!-- blog 1 -->
+    <div class="flex flex-col hover:shadow-xl border-2 bg-white dark:bg-transparent dark:border-[{{ post.data.darkClr }}] border-dark rounded-lg overflow-hidden transition-all duration-1000 load w-full max-w-xs cursor-pointer select-none">
+      <img src="{{ post.data.img }}" />
+      <div class="flex-1 justify-between p-2 flex flex-col">
+        <a href="{{ post.url }}" class="text-lg font-bold font-headings dark:text-white">{{ post.data.title }}</a>
+        <p class="dark:text-white/70 my-2">{{ post.data.description }}</p>
+        <a href="{{ post.url }}" class="justify-end items-center flex gap-3 dark:text-[{{ post.data.darkClr }}] text-dark font-light text-xl">
+          <p class="underline">Read</p>
+          <i class="far fa-arrow-alt-circle-right"></i>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <a href="/blogs/index.html" class="block w-full max-w-[200px] btn p-3 mx-auto text-center rounded-sm transition-all duration-1000 load"> Read More </a>
+</section>
+<section class="pb-20 mt-4 max-w-6xl mx-auto transition-all duration-1000 load">
+  <form method="POST" class="focus-within:dark:bg-primary bg-dark dark:bg-transparent dark:md:border-2 dark:md:border-primary p-6 rounded-xl w-full max-w-xl mx-auto">
+    <p class="text-white/80">
+      Are you interested in web development, Javascript and programming topics ?
+      <b class="text-white">Then you can easily subscribe in my newsletter!</b>
+    </p>
+    <div class="flex my-3 rounded-sm overflow-hidden border-2 border-transparent dark:focus-within:border-dark">
+      <input type="email" name="email" placeholder="example@gmail.com" required class="w-full px-4 bg-black/80 border-2 border-primary text-white" />
+      <button type="submit" class="text-white bg-primary py-3 px-4">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </form>
+</section>
