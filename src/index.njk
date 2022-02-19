@@ -34,7 +34,7 @@ layout: base.njk
     {% for post in collections.featured %}
     <!-- blog 1 -->
     <div class="flex flex-col hover:shadow-xl border-2 bg-white dark:bg-transparent dark:border-[{{ post.data.darkClr }}] border-dark rounded-lg overflow-hidden transition-all duration-1000 load w-full max-w-xs cursor-pointer select-none">
-      <img src="{{ post.data.img }}" />
+      <img src="{{ post.data.img }}" alt="{{ post.data.imgCaption }}"/>
       <div class="flex-1 justify-between p-2 flex flex-col">
         <a href="{{ post.url }}" class="text-lg font-bold font-headings dark:text-white">{{ post.data.title }}</a>
         <p class="dark:text-white/70 my-2">{{ post.data.description }}</p>
