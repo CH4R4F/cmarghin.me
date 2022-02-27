@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: CH4R4F/cmarghin.me
   branch: main
 media_folder: "public/media/blogs"
 public_folder: "/media/blogs"
