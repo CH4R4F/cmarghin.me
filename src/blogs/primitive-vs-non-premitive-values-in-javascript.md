@@ -39,11 +39,11 @@ console.log(y == z) // true
 
 Values that contains one of those primitive data types are called **static data**, and javascript store static data in **the stack**.
 
-> The stack is a place inside the memory where javascript stores only static data, and also can store the refernce for other data taypes like objects. the reference is the adress that points to the value of our object or any non-primitive data types and we'll see that later.
+> The stack is a place inside the memory where javascript stores only static data, and also can store the refernce for other data types like objects. the reference is the adress that points to the value of our non-primitive value and we'll see that later.
 >
-> static data has one thing in common, their size is fixed, so javascript knows theire size and how much it'll allocate in the memory, this called *static memory allocation* you can learn more about memory life cycle in [This article by Alex devero](https://blog.alexdevero.com/memory-life-cycle-heap-stack-javascript/)
+> static data has one thing in common, their size is fixed, so javascript knows their size and how much it'll allocate in the memory, this called *static memory allocation* you can learn more about memory life cycle in [This article by Alex devero](https://blog.alexdevero.com/memory-life-cycle-heap-stack-javascript/)
 
-If I create a variable with static data and assign it to another variable, javascript will copy the value of the first variable to the second variable, resulting in two variables in the stack with two distinct values. 
+If I create a variable with static data and assign it to another variable, javascript will copy the value of the first variable to the second variable, in this case we pass value by value, resulting in two variables in the stack with two distinct values. 
 
 **Example:**
 
