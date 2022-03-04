@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/media");
   eleventyConfig.addPassthroughCopy("./src/blogs");
   eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addPassthroughCopy("./src/assets/css/prism.css");
 
   return {
     dir: {

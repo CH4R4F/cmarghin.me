@@ -19,11 +19,11 @@ title: CMarghin | Blogs
   <h2 class="mb-4 text-3xl md:text-4xl dark:text-white text-dark font-bold text-center font-headings transition-all duration-1000 load">Latest Blogs</h2>
   <div class="flex flex-wrap gap-3 justify-center content-start">
     <!-- blog card -->
-    {%- for post in collections.post -%} {% if post.data.description %}
+    {%- for post in collections.post -%} {% if post.data.img %}
     <div class="flex flex-col overflow-hidden rounded-lg bg-white dark:bg-transparent dark:border-[{{ post.data.darkClr }}] load transition-all duration-1000 max-w-xs border-2 border-dark">
-      <div>
+      <a href="{{ post.url }}">
         <img class="w-full" src="{{ post.data.img }}" alt="" />
-      </div>
+      </a>
       <div class="p-2 dark:!text-dark flex flex-col justify-between flex-1">
         <a href="{{ post.url }}" class="text-lg font-bold font-headings dark:text-white">{{ post.data.title }}</a>
         <p class="dark:text-white/70 my-2">{{ post.data.description }}</p>
